@@ -1,12 +1,6 @@
 <template>
-    <div id="contact">
-            <h1 id="us">Contact us</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196281.12936887765!2d-104.995196694213!3d39.7645186739618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b80aa231f17cf%3A0x118ef4f8278a36d6!2sDenver%2C%20CO!5e0!3m2!1sen!2sus!4v1619121137706!5m2!1sen!2sus" 
-            allowFullScreen=""
-            title="googlemap"
-            key="denver-map"
-            >
-            </iframe>
+    <!-- <div id="contact">
+            
             <div id="contact-info">
             <h4>Phone Number:</h4>
             <p>303-884-8298</p>
@@ -15,43 +9,86 @@
             <h4>Where we provide services:</h4>
             <p>Denver <br> Arvada <br> Westminster<br>Aurora<br>Lakewood<br>Thornton<br></p>
             </div>
+    </div> -->
+    <div id="contact-us">
+    <div id="contact">
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn3.iconfinder.com/data/icons/network-and-communications-10/32/network_contact_list_contact_log_contact_book-512.png" 
+      alt="Avatar" 
+      style="width:300px;height:300px;">
+      <h2>Contact info</h2>
     </div>
+    <div class="flip-card-back">
+        <h4>Phone Number:</h4>
+        <p>303-884-8298</p>
+        <h4>Email:</h4>
+        <p>soapbox.denver@gmail.com</p>
+        <h4>Where we provide services:</h4>
+        <p>Denver <br> Arvada <br> Westminster<br>Aurora<br>Lakewood<br>Thornton<br></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 </template>
 
 
 
 <style>
-#us{
-    position:absolute;
-    top:10%;
-    left:43%;
+#contact-us{
+    height:600px;
+
 }
 #contact{
-    height:620px;
-}
-#contact iframe {
     position:absolute;
     top:30%;
-    left:5%;
-    border: 0;
-    width:700px;
-    height:400px;
-    margin-bottom:15px;
+    left:60%;
 }
 
-#contact-info {
-    position:absolute;
-    top:30%;
-    left:65%;
-    width: 400px;
-    height:350px;
-    /* border-style: solid;
-    border-color: grey;
-    padding:0px;
-    background:white; */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
 }
 
-#contact-info h4{
-    padding:10px;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:#B4CBD9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
 </style>
