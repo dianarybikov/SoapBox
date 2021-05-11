@@ -44,6 +44,8 @@ padding:30px;
 margin:20px;
 margin-top:20px;
 display:inline-block;
+
+
 }
 
 </style>

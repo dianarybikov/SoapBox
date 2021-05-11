@@ -8,7 +8,7 @@
 export default {
     data(){
         return {
-            footerText: "Copyright anno 2021"
+            footerText: "Soap Box"
         }
     }
 }
@@ -16,12 +16,10 @@ export default {
 
 <style scoped>
 footer {
-    background-color:#B4CBD9;
+    background-color:#b4cbd994;
     padding:10px;
     text-align:center;
     height:50px;
 }
-p{
-    background-color:#B4CBD9;
-}
+
 </style>

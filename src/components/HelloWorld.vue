@@ -1,8 +1,10 @@
 <template>
     <div class="home">
    <div id="cleaning">
-    <h1>Do you need a cleaning?</h1>
-    <div id="cleaning-type">
+    <h1>A clean home</h1>
+    <h2>is a happy home</h2>
+     <img src="https://rdcnewsadvice.wpengine.com/wp-content/uploads/2016/07/clean-house.jpg">
+    <!-- <div id="cleaning-type">
       <a a href="./Services.vue">Standard <br>cleaning</a>
     </div>
     <div id="cleaning-type">
@@ -13,52 +15,53 @@
     </div>
     <div id="cleaning-type">
       <a a href="./Services.vue">Interior/Exterior Window Cleaning</a>
-    </div>
+    </div> -->
   </div>
   <div id="included">
     <h1>What is included in a Cleaning</h1>
     <div id="areas">
+      <img src="https://www.pngfind.com/pngs/m/38-385503_cg-home-icon-svg-png-free-download-home.png">
       <h2>All Areas</h2>
         <li>Dust light fixtures</li>
-        <li>Dust window blinds</li>
-        <li>Dust window ledges</li>
+        <li>Dust window blinds & ledges</li>
         <li>Dust baseboards</li>
         <li>Dust furniture</li>
         <li>light tidying up</li>
         <li>Wet surfaces wipe down</li>
     </div>
     <div id="areas">
+      <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/kitchen-1447727-1224141.png">
         <h2>Kitchen</h2>
-        <li>Dust light fixtures</li>
-        <li>Dust window blinds</li>
-        <li>Dust window ledges</li>
-        <li>Dust baseboards</li>
-        <li>Dust furniture</li>
-        <li>light tidying up</li>
-        <li>Wet surfaces wipe down</li>
+        <li>Oven wipe down </li>
+        <li>Backsplash & Countertop</li>
+        <li>Sinks & Faucets</li>
+        <li>Fridge wipe down</li>
+        <li>Mircrowave</li>
+        <li>Tables & Chairs washed</li>
     </div>
     <div id="areas">
+      <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/bathroom-1677078-1427673.png">
         <h2>Bathrooms</h2>
-        <li>Dust light fixtures</li>
-        <li>Dust window blinds</li>
-        <li>Dust window ledges</li>
-        <li>Dust baseboards</li>
-        <li>Dust furniture</li>
-        <li>light tidying up</li>
-        <li>Wet surfaces wipe down</li>
+        <li>Showers & Tubs</li>
+        <li>Mirrors cleaning</li>
+        <li>Toilets disinfected</li>
+        <li>Trash emptied</li>
+        <li>Vanity cleaning</li>
+        <li>Cabinet fronts wiped</li>
     </div>
     <div id="areas">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ73vcJfDBr_rEunISWVwGGl_kauyHkeexIfw&usqp=CAU">
         <h2>Add Ons</h2>
-        <li>Dust light fixtures</li>
-        <li>Dust window blinds</li>
-        <li>Dust window ledges</li>
-        <li>Dust baseboards</li>
-        <li>Dust furniture</li>
-        <li>light tidying up</li>
-        <li>Wet surfaces wipe down</li>
+        <li>Inside Fridge</li>
+        <li>Inside Oven</li>
+        <li>Inside washing machine</li>
+        <li>Baseboards wet wiped</li>
+        <li>Blinds wet wipe</li>
+        <li>Laundry</li>
+        
     </div>
   </div>
-        <h1 id="shine">We want you to come home a shine</h1>
+        <h1 id="shine">We want you to come home to a shine</h1>
     <div id="cat-3">
         <div id="happy">
         <img src="https://spng.subpng.com/20180802/vcc/kisspng-black-white-emoticon-smiley-computer-icons-clip-smile-svg-png-icon-free-download-505342-onlin-5b62bb3990c076.4970999815331971135929.jpg"/>
@@ -71,17 +74,58 @@
             <h4>We dont only strive for the best cleaning. We want to<br> have a personal relationship. Providing answers as<br> soon as possible. Take care of you is our first priority.</h4>
         </div>
     </div>
+<div >
+
+</div>
   </div>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
 </template>
 
 <style>
 
+html {
+  scroll-behavior: smooth;
+}
 #cleaning{
   /* background:yellow; */
   width:100%;
   height:550px;
   margin-top:50px;
+  /* background-image: url("https://rdcnewsadvice.wpengine.com/wp-content/uploads/2016/07/clean-house.jpg"); */
 }
+#cleaning h1{
+  position:absolute;
+  top:38%;
+  left:62%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:45px;
+  
+}
+#cleaning h2{
+  position:absolute;
+  top:65%;
+  left:48%;
+  font-size:70px;
+  z-index:100;
+  font-family: 'Cedarville Cursive', cursive;
+  color:black;
+ 
+}
+
+
+#cleaning img{
+  position:absolute;
+  top:14%;
+  left:1%;
+  width:650px;
+  height:550px;
+  /* opacity: .80; */
+}
+
 
 #cleaning-type{
   /* background:rgb(140, 140, 218); */
@@ -91,7 +135,7 @@
   width:200px;
   height:200px;
   margin-top:150px;
-  background:white;
+  /* background:white; */
 }
 #cleaning-type:hover {
   transform:translate3D(0, -1px,0) scale(1.10);
@@ -105,7 +149,7 @@
 #included {
   /* background:rgb(83, 124, 83); */
   width:100%;
-  height:550px;
+  height:500px;
 }
 
 #areas{
@@ -115,6 +159,7 @@
   margin:20px;
   display:inline-block;
   margin-top:50px;
+  text-align:left;
   
 }
 

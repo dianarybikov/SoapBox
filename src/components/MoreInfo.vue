@@ -79,6 +79,9 @@ h1{
 #info {
     display:flex;
     justify-content: center;
+    padding:40px;
+    margin-left:30px;
+    
 }
 ul{
     text-align:left;
