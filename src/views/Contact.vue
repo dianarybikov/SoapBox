@@ -10,38 +10,58 @@
             </div>
     </div>
     <div id="location">
-      <img src="https://toppng.com/uploads/preview/office-locations-office-location-icon-11562974310f7mvv1cta6.png">
+      <img src="https://pics.freeicons.io/uploads/icons/png/568635131536669843-512.png">
       <h4>Where we provide services:</h4>
       <p>Denver <br> Arvada <br> Westminster<br>Aurora<br>Lakewood<br>Thornton<br></p>
     </div>
-</div>    
+</div> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
 </template>
 
 
 
-<style>
+<style scoped>
+img{
+  width:90px;
+  height:90px;
+}
 #contact-us{
     height:600px;
+    vertical-align: middle;
 
 }
 #contact{
     position:absolute;
-    top:40%;
-    left:55%;
+    top:20%;
+    left:50%;
     border:1px solid black;
     padding:10px;
-    height:215px;
+    height:265px;
+    width:200px;
+    border:7px solid #b4cbd994;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+
+
 }
-#contact h4{
+h4{
   padding:10px;
+  font-size:20px;
 }
 
 #location {
   position:absolute;
-  top:40%;
-  left:30%;
+  top:20%;
+  left:25%;
   border:1px solid;
   padding:10px;
+  height:265px;
+  width:200px;
+  border:7px solid #b4cbd994;
+  font-family: 'Open Sans Condensed', sans-serif;
+
 }
 
 

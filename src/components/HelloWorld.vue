@@ -4,18 +4,6 @@
     <h1>A clean home</h1>
     <h2>is a happy home</h2>
      <img src="https://rdcnewsadvice.wpengine.com/wp-content/uploads/2016/07/clean-house.jpg">
-    <!-- <div id="cleaning-type">
-      <a a href="./Services.vue">Standard <br>cleaning</a>
-    </div>
-    <div id="cleaning-type">
-      <a href="./Services.vue">Deep <br> Cleaning</a>
-    </div>
-    <div id="cleaning-type">
-      <a href="./Services.vue">Move in/out <br>cleaning</a>
-    </div>
-    <div id="cleaning-type">
-      <a a href="./Services.vue">Interior/Exterior Window Cleaning</a>
-    </div> -->
   </div>
   <div id="included">
     <h1>What is included in a Cleaning</h1>
@@ -71,7 +59,7 @@
         <div id="happy">
             <img src="https://img.icons8.com/pastel-glyph/2x/like--v3.png"/> 
             <h3>We strive to have A+ customer service</h3>
-            <h4>We dont only strive for the best cleaning. We want to<br> have a personal relationship. Providing answers as<br> soon as possible. Take care of you is our first priority.</h4>
+            <h4>We dont only strive for the best cleaning. We want to<br> have a personal relationship. Providing answers as<br> soon as possible. Taking care of you is our first priority.</h4>
         </div>
     </div>
 <div >
@@ -85,17 +73,15 @@
 
 </template>
 
-<style>
+<style scoped>
 
 html {
   scroll-behavior: smooth;
 }
 #cleaning{
-  /* background:yellow; */
   width:100%;
-  height:550px;
+  height:590px;
   margin-top:50px;
-  /* background-image: url("https://rdcnewsadvice.wpengine.com/wp-content/uploads/2016/07/clean-house.jpg"); */
 }
 #cleaning h1{
   position:absolute;
@@ -107,39 +93,22 @@ html {
 }
 #cleaning h2{
   position:absolute;
-  top:65%;
-  left:48%;
+  top:58%;
+  left:46%;
   font-size:70px;
   z-index:100;
   font-family: 'Cedarville Cursive', cursive;
   color:black;
- 
 }
-
-
 #cleaning img{
   position:absolute;
   top:14%;
   left:1%;
   width:650px;
   height:550px;
-  /* opacity: .80; */
+
 }
 
-
-#cleaning-type{
-  /* background:rgb(140, 140, 218); */
-  padding:20px;
-  margin:20px;
-  display:inline-block;
-  width:200px;
-  height:200px;
-  margin-top:150px;
-  /* background:white; */
-}
-#cleaning-type:hover {
-  transform:translate3D(0, -1px,0) scale(1.10);
-}
 #cleaning-type a {
   text-decoration:none;
   font-size: 25px;
@@ -149,13 +118,19 @@ html {
 #included {
   /* background:rgb(83, 124, 83); */
   width:100%;
-  height:500px;
+  height:590px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:21px;
+
+}
+#included h1{
+  margin-bottom:35px;
 }
 
 #areas{
   width:250px;
   height:400px;
-  background:white;
+  /* background:white; */
   margin:20px;
   display:inline-block;
   margin-top:50px;
@@ -171,18 +146,34 @@ li{
   padding:10px;
 }
 #shine{
-    margin-top:120px;
+    margin-top:70px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 #cat-3{
     display:flex;
     justify-content:center;
     padding:15px;
     height:350px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top:50px;
     
 }
+
+#cat-3 h3 {
+  padding:10px;
+  margin-bottom:7px;
+  font-size:30px;
+}
+#cat-3 h4 {
+  padding:10px;
+  margin-bottom:7px;
+  font-size:17px;
+}
+
+
 #happy{
     padding:35px;
-    margin-left:25px;
+    margin-left:28px;
 
 }
 img{

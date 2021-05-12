@@ -25,7 +25,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 
 header{
     display: flex;
@@ -37,9 +37,10 @@ header{
 }
 #title{
     position:absolute;
-    top:-8%;
+    top:-.5%;
     left:3%;
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size:48px;
 }
 #links{
     margin-left:40px;

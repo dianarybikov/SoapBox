@@ -1,7 +1,7 @@
 <template>
 <div class="full-page">
   <div class="about">
-    <h1>About</h1>
+    <!-- <h1>About</h1> -->
   </div>
   <div>
     <img id="img-t" src="https://www.clipartkey.com/mpngs/m/100-1006688_headshot-silhouette-placeholder-image-person-free.png"/>
@@ -16,7 +16,7 @@
 </template>
 
 
-<style>
+<style scoped>
 .full-page{
   height: 700px;
 }
@@ -27,19 +27,18 @@
 }
 #img-t{
   position:absolute;
-  top:40%;
+  top:20%;
   left:15%;
   width:500px;
   height:500px;
 }
 #me{
     position:absolute;
-    top:50%;
+    top:28%;
     left:52%;
     width: 400px;
     height:350px;
-    border-style: solid;
-    border-color: grey;
+    border:7px solid #b4cbd994;
     padding:0px;
     background:white;
 }
